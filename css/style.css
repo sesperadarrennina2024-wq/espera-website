@@ -232,6 +232,134 @@ section {
   margin-bottom: 0;
 }
 
+/* ---------- Services & Packages ---------- */
+.section-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-heading h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #755139;
+}
+.section-heading p {
+  margin-left: auto;
+  margin-right: auto;
+  color: #755139;
+}
+.section-heading p:last-child {
+  margin-bottom: 0;
+  max-width: 60ch;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.package-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 32px 28px;
+  border: 1px solid #eadfd3;
+  border-top: 4px solid #b78760;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(117, 81, 57, 0.08);
+}
+.package-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #755139;
+  margin-bottom: 8px;
+}
+
+.package-label {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b6346;
+  margin-bottom: 4px;
+}
+.package-price {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #8b6346;
+  margin-bottom: 24px;
+}
+
+.package-list {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+.package-list li {
+  position: relative;
+  padding: 8px 0 8px 28px;
+  border-bottom: 1px dashed #eadfd3;
+  line-height: 1.6;
+}
+.package-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #a17553;
+}
+
+.btn-package {
+  margin-top: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  background-color: transparent;
+  color: #8b6346;
+  border: 2px solid #b78760;
+  padding: 18px 24px;
+}
+.btn-package:hover {
+  background-color: #8b6346;
+  border-color: #8b6346;
+  color: #ffffff;
+}
+.btn-package-solid {
+  background-color: #8b6346;
+  border-color: #8b6346;
+  color: #ffffff;
+}
+.btn-package-solid:hover {
+  background-color: #cd996d;
+  border-color: #cd996d;
+  color: #2b1d14;
+}
+
+/* Highlighted "Most Booked" card */
+.package-featured {
+  background-color: #fffaf4;
+  border-top-color: #cd996d;
+}
+.package-badge {
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  padding: 6px 16px;
+  background-color: #cd996d;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: #755139;
