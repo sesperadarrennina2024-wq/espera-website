@@ -63,6 +63,9 @@ section {
 .site-header {
   background-color: #8b6346;
   padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-inner {
@@ -183,11 +186,12 @@ section {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #8b6346;
+  color: #8b6346;
   padding: 12px 30px;
 }
 .btn-outline:hover {
-  background-color: #ffffff;
+  background-color: #8b6346;
   color: #755139;
 }
 
