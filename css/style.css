@@ -63,12 +63,16 @@ section {
 .site-header {
   background-color: #8b6346;
   padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:center;
   flex-wrap: wrap;
   gap: 12px;
 }
