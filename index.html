@@ -30,31 +30,53 @@
           <span class="brand-name">Glamur <em>Photography</em></span>
         </a>
 
-        <nav aria-label="Main Menu">
+        <nav class-label="nav-links">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact" class="nav-cta">Book Now</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
+      <!-- HOME -->
+      <section class="hero" id="home">
         <div class="container">
           <p class="eyebrow">Freelance Photography &middot; Quezon, Bukidnon</p>
           <h1>Capturing the moments <em>you'll want to keep.</em></h1>
-          <p class="tagline">
-            Make a glamorous moment with GlaMur Photography!
-          </p>
+          <p class="tagline">Make a glamorous moment with GlaMur Photography!</p>
           <div class="hero-buttons">
-            <a href="#" class="btn">Book a Shoot</a>
-            <a href="#" class="btn btn-outline">View Portfolio</a>
+            <a href="#book" class="btn">Book a Shoot</a>
+            <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Favorites (part of Home) -->
+      <section class="favorites">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Work</p>
+            <h2>Recent Favorites</h2>
+          </div>
+          <div class="favorites-grid">
+            <a href="#portfolio" class="favorite-card">
+              <img src="images/portrait fav.jpg" alt="Portrait by Glamur Photography" loading="lazy" />
+              <span class="photo-tag">Portrait</span>
+            </a>
+            <a href="#portfolio" class="favorite-card">
+              <img src="images/weddinig fav.jpg" alt="Wedding by Glamur Photography" loading="lazy" />
+              <span class="photo-tag">Wedding</span>
+            </a>
+            <a href="#portfolio" class="favorite-card">
+              <img src="images/graduation.jpg" alt="Graduation by Glamur Photography" loading="lazy" />
+              <span class="photo-tag">Graduation</span>
+            </a>
           </div>
         </div>
       </section>
