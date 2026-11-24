@@ -49,7 +49,9 @@
         <div class="container">
           <p class="eyebrow">Freelance Photography &middot; Quezon, Bukidnon</p>
           <h1>Capturing the moments <em>you'll want to keep.</em></h1>
-          <p class="tagline">Make a glamorous moment with GlaMur Photography!</p>
+          <p class="tagline">
+            Make a glamorous moment with GlaMur Photography!
+          </p>
           <div class="hero-buttons">
             <a href="#book" class="btn">Book a Shoot</a>
             <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
@@ -66,15 +68,27 @@
           </div>
           <div class="favorites-grid">
             <a href="#portfolio" class="favorite-card">
-              <img src="images/portrait fav.jpg" alt="Portrait by Glamur Photography" loading="lazy" />
+              <img
+                src="images/portrait fav.jpg"
+                alt="Portrait by Glamur Photography"
+                loading="lazy"
+              />
               <span class="photo-tag">Portrait</span>
             </a>
             <a href="#portfolio" class="favorite-card">
-              <img src="images/weddinig fav.jpg" alt="Wedding by Glamur Photography" loading="lazy" />
+              <img
+                src="images/weddinig fav.jpg"
+                alt="Wedding by Glamur Photography"
+                loading="lazy"
+              />
               <span class="photo-tag">Wedding</span>
             </a>
             <a href="#portfolio" class="favorite-card">
-              <img src="images/graduation.jpg" alt="Graduation by Glamur Photography" loading="lazy" />
+              <img
+                src="images/graduation.jpg"
+                alt="Graduation by Glamur Photography"
+                loading="lazy"
+              />
               <span class="photo-tag">Graduation</span>
             </a>
           </div>
@@ -182,6 +196,129 @@
           <div class="dots" id="dots"></div>
         </div>
       </section>
+
+      <!-- ========== BOOK NOW ========== -->
+      <section class="book" id="book">
+        <div class="container book-grid">
+          <div>
+            <p class="eyebrow">Book Now</p>
+            <h2>Let's Plan Your Shoot</h2>
+            <p>
+              Fill in the form and we'll get back to you to confirm availability
+              and rates.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="icon">&#9742;</span
+                ><a href="tel:+639455711324">0945 571 1324</a>
+              </li>
+              <li>
+                <span class="icon">&#9993;</span
+                ><a href="mailto:ivanmuring20@gmail.com"
+                  >ivanmuring20@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="icon">&#8982;</span>Quezon, Bukidnon &amp; nearby
+                areas
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="#" class="pill">Facebook</a>
+              <a href="#" class="pill">Instagram</a>
+            </div>
+
+            <iframe
+              class="map"
+              title="Map of Quezon, Bukidnon"
+              src="https://www.google.com/maps?q=Quezon,+Bukidnon&output=embed"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <form class="booking-form" id="booking-form">
+            <h3>Booking Inquiry</h3>
+
+            <label
+              >Full Name
+              <input
+                type="text"
+                name="name"
+                placeholder="Juan Dela Cruz"
+                required
+              />
+            </label>
+
+            <div class="row">
+              <label
+                >Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+                />
+              </label>
+              <label
+                >Phone Number
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="09XX XXX XXXX"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="row">
+              <label
+                >Event Type
+                <select name="type" required>
+                  <option value="">Choose one</option>
+                  <option>Portrait Session</option>
+                  <option>Maternity Shoot</option>
+                  <option>Family Session</option>
+                  <option>Graduation</option>
+                  <option>Debut Celebration</option>
+                  <option>Wedding</option>
+                  <option>Christening</option>
+                  <option>Community Event</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label
+                >Event Date
+                <input type="date" name="date" required />
+              </label>
+            </div>
+
+            <label
+              >Location
+              <input
+                type="text"
+                name="location"
+                placeholder="e.g. Poblacion, Quezon, Bukidnon"
+                required
+              />
+            </label>
+
+            <label
+              >Message <span class="optional">(optional)</span>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Tell us about your event, number of hours, special requests..."
+              ></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-send">Send Inquiry</button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="site-footer">
