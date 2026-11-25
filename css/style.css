@@ -130,7 +130,7 @@ section {
 .nav-links .nav-cta {
   border: 2px solid #cd996d;
 }
-
+/* -----------Home -----------*/
 .hero {
   background: linear-gradient(135deg, #f1e7dc 0%, #f2d7c5 100%);
   color: #755139;
@@ -197,21 +197,43 @@ section {
   background-color: #8b6346;
   color: #755139;
 }
-
-/* ---------- About ---------- */
-.about-grid {
+/* ---------- Recent Favorites ---------- */
+.favorites-grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
 }
-.about-grid img {
+.favorite-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: var(--sand);
+  box-shadow: 0 14px 32px rgba(117, 81, 57, 0.18);
+  transition: transform 0.3s;
+}
+.favorite-card:hover {
+  transform: translateY(-4px);
+}
+.favorite-card img {
   width: 100%;
-  max-width: 380px;
-  aspect-ratio: 2 / 3;
+  height: 100%;
   object-fit: cover;
-  border-radius: 14px;
-  border: 3px solid #b78760;
+}
+.photo-tag {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 5px 14px;
+  background-color: rgba(43, 29, 20, 0.6);
+  color: var(--cream);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 20px;
 }
 
 /* ---------- Services & Packages ---------- */
@@ -341,7 +363,21 @@ section {
   text-transform: uppercase;
   border-radius: 20px;
 }
-
+/* ---------- About ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: center;
+}
+.about-grid img {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid #b78760;
+}
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: #755139;
