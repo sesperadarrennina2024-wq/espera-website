@@ -378,6 +378,56 @@ section {
   border-radius: 14px;
   border: 3px solid #b78760;
 }
+/* ---------- Reviews ---------- */
+.reviews {
+  background-color: var(--dark-brown);
+  text-align: center;
+}
+.reviews .eyebrow {
+  color: var(--gold);
+}
+.reviews h2 {
+  color: #ffffff;
+}
+.reviews blockquote {
+  max-width: 700px;
+  min-height: 110px;
+  margin: 40px auto 20px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--cream);
+}
+.review-who {
+  margin: 0 auto 40px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dots button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background-color: rgba(250, 246, 241, 0.4);
+  cursor: pointer;
+  transition:
+    width 0.3s,
+    background-color 0.3s;
+}
+.dots button.active {
+  width: 28px;
+  background-color: var(--gold);
+}
 /* ---------- Footer ---------- */
 .site-footer {
   background-color: #755139;
