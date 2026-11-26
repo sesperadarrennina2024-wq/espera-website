@@ -209,7 +209,7 @@ section {
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 18px;
-  background-color: var(--sand);
+  background-color: #f1e7dc;
   box-shadow: 0 14px 32px rgba(117, 81, 57, 0.18);
   transition: transform 0.3s;
 }
@@ -227,7 +227,7 @@ section {
   bottom: 14px;
   padding: 5px 14px;
   background-color: rgba(43, 29, 20, 0.6);
-  color: var(--cream);
+  color: #f1e7dc;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 600;
   font-size: 0.7rem;
